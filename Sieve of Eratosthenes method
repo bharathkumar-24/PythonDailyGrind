@@ -1,0 +1,17 @@
+Write a Python program that uses the Sieve of Eratosthenes method to compute prime numbers up to a specified number.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+def SOE_fun(n):
+    my_list=[]
+    for i in range(2,n+1):
+        my_list.append(i)
+    temp=[]
+    for i in range(2,n+1):
+        for j in my_list:
+            if j==i:
+                continue
+            elif j%i==0:
+                temp.append(j)   
+    return list(set(my_list).difference(set(temp)))
+n=int(input("enter the number n:"))
+print(SOE_fun(n))
