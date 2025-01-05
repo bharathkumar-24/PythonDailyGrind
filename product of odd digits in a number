@@ -1,0 +1,24 @@
+Write a Python program to compute the product of the odd digits in a given number, or 0 if there aren't any.
+    Input: 123456789
+    Output: 945
+    
+    Input: 2468
+    Output:0
+    
+    Input: 13579
+    Output: 945
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+def fun(num,product=1,count=0):
+    if num==0:
+        if count==0:
+            return 0
+        else:
+            return product
+    else:
+        n=num%10
+        if n%2!=0:
+            product*=n
+            count+=1
+    return fun(num//10,product,count)
+num=13578
+fun(num)
