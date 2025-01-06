@@ -1,0 +1,15 @@
+User will input (3ages).Find the oldest one.
+---------------------------------------------------------------------------------------------------------
+def oldest_age(age1,age2,age3):
+    if age1>age2 and age1>age3:
+        return age1
+    elif age2>age1 and age2>age3:
+        return age2
+    else:
+        return age3
+
+age1=int(input("enter the age1:"))
+age2=int(input("enter the age2:"))
+age3=int(input("enter the age3:"))
+print(oldest_age(age1,age2,age3))
+        
