@@ -1,0 +1,14 @@
+Write a program that will give you the sum of 3 digits
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+def sum_fun(number,sum=0):
+    
+    if number<100 and number>999:
+        print("enter a valid three digit number")
+        return none
+    hundreds=number//100
+    tens=(number//10)%10
+    units=number%10
+    sum=hundreds+tens+units
+    return sum
+number=int(input("enter a number:"))
+print(sum_fun(number))
