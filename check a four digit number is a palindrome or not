@@ -1,0 +1,16 @@
+ Write a program that will reverse a four digit number.Also it checks whether the reverse is true.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   def palindrome_fun(number):
+    reverse=0
+    thousands=number//1000
+    hundreds=(number//100)%10
+    tens=(number//10)%10
+    units=(number%10)
+    reverse=(units*1000)+(tens*100)+(hundreds*10)+(thousands*1)
+    if reverse==number:
+        return True
+    else:
+        return False
+number=int(input("enter a four digit number:"))
+palindrome_fun(number)
+    
