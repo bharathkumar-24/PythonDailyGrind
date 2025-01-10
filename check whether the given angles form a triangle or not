@@ -1,0 +1,12 @@
+Write a program that take a user input of three angles and will find out whether it can form a triangle or not.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+angle1=float(input("enter the first angel:"))
+angle2=float(input("enter the first angel:"))
+angle3=float(input("enter the first angel:"))
+sum=angle1+angle2+angle3
+if sum==180:
+    print("the angels will formm a triangle")
+else:
+    print("triangel will not form with the given angles")
+
