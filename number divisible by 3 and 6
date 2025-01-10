@@ -1,0 +1,10 @@
+ Write a program that will tell whether the given number is divisible by 3 & 6.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------number=int(input("enter the numer:"))
+if number%3==0 and number%6==0:
+    print("The given number is divisible by both 3 and 6.")
+else:
+    print("The given number is not divisible by both 3 and 6.")
+
+output:
+enter the numer: 6
+The given number is divisible by both 3 and 6.
