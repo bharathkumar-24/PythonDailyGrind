@@ -1,0 +1,14 @@
+Write a program that will take user input of cost price and selling price and determines whether its a loss or a profit.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+def fun(cost_price,selling_price):
+    if selling_price>cost_price:
+        #profit=(selling_price-cost_price)
+        #profit_percentage=(profit/cost_price)*100
+        return "profit"
+    else:
+        #loss=cost_price-selling_price
+        #loss_percentage=(loss/cost_price)*100
+        return "loss"
+cost_price=float(input("enter the cost price:"))
+selling_price=float(input("enter the selling price:"))
+print(fun(cost_price,selling_price))
