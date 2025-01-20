@@ -1,0 +1,15 @@
+Write a program that will tell the number of dogs and chicken are there when the user will provide the value of total heads and legs.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+heads=int(input("enter the number of heads:"))
+legs=int(input("enter the number of legs:"))
+dogs=(legs-2*heads)//2
+chickens=heads-dogs
+print(dogs,chickens)
+
+  --------------------------------------------------------------------------------------
+output:
+
+  enter the number of heads: 5
+  enter the number of legs: 12
+  1 4
