@@ -1,0 +1,19 @@
+Q. Write a program that can multiply 2 numbers provided by the user without using the * operator?
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+solution:
+
+number1=int(input("enter the first number:"))
+number2=int(input("enter the second number:"))
+sum=0
+for i in range(number2):
+    sum=sum+number1
+print(sum)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+output:
+
+enter the first number: 12
+enter the second number: 2
+24
+
