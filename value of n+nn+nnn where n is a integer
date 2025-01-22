@@ -1,0 +1,18 @@
+ Q. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Solution:
+
+def fun(n):
+    n_str=str(n)
+    nn_str=n_str+n_str
+    nnn_str=n_str+n_str+n_str
+    return int(n_str)+int(nn_str)+int(nnn_str)
+
+n=input("enter a integer value")
+print(fun(n))
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output:
+
+enter a integer value 5
+615
+
