@@ -1,0 +1,33 @@
+Q. User will provide 2 numbers you have to find the by LCM of those 2 numbers
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Solution:
+
+# hcf(a,b) * lcm(a,b) = a*b
+# lcm(a,b)=(a*b)/hcf(a,b)
+def lcm_fun(a,b):
+    list1=[]
+    list2=[]
+    if a%b==0:
+        return int((a*b)/b)
+    elif b%a==0:
+        return int((a*b)/a)
+    else:
+        for i in range(1,a+1):
+            if a%i==0:
+                list1.append(i)
+        for j in range(1,b+1):
+            if b%j==0:
+                list2.append(j)
+    list3=set(list1).intersection(list2)
+    list3=list(list3)
+    lcm=(a*b)/max(list3)
+    return int(lcm)
+a=int(input("enter the first number:"))
+b=int(input("enter the second number:"))
+print("lcm of the number",a,"and",b,"is:",lcm_fun(a,b))     
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output:
+
+enter the first number: 40
+enter the second number: 56
+lcm of the number 40 and 56 is: 280
