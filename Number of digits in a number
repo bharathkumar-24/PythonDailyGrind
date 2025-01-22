@@ -1,0 +1,17 @@
+Q.Take a number from the user and find the number of digits in it?
+---------------------------------------------------------------------------------------------------------------------------------------
+Solution:
+
+def fun(number):
+    count=0
+    while number>0:
+        count+=1
+        number=number//10
+    return count
+number=int(input("enter a number:"))
+print(f"The number of digits in {number} is {fun(number)}")      
+---------------------------------------------------------------------------------------------------------------------------------------------
+Output:
+
+enter a number: 123
+The number of digits in 123 is 3
