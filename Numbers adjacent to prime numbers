@@ -1,0 +1,41 @@
+Q. Write a Python program to find a list of all numbers that are adjacent to a prime number in the list, sorted without duplicates.
+
+Input:  [2, 17, 16, 0, 6, 4, 5]
+Output: [2, 4, 16]
+
+Input:  [1, 2, 19, 16, 6, 4, 10]
+Output: [1, 2, 16]
+
+Input:  [1, 2, 3, 5, 1, 16, 7, 11, 4]
+Output: [1, 2, 3, 4,16]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Solution:
+
+def fun(my_list):
+    dict1={}
+    for i in my_list:
+        is_adjacent1=prime_fun(i-1)
+        is_adjacent2=prime_fun(i+1)
+        if i==0:
+            continue
+        elif is_adjacent1:
+            dict1[i]=0
+        elif is_adjacent2:
+            dict1[i]=0
+    new_list=[]
+    for key in dict1:
+        new_list.append(key)
+    return sorted(new_list)
+def prime_fun(n):
+    is_prime=True
+    for i in range(2,n):
+        if n%i==0:
+            is_prime=False
+    return is_prime
+
+my_list=[1, 2, 19, 16, 6, 4, 10]
+fun(my_list)        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output:
+
+[1, 2, 4, 6, 10, 16]
