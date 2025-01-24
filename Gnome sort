@@ -1,0 +1,25 @@
+Q. Write a Python program to sort a list of elements using Gnome sort.Gnome sort is a sorting algorithm originally proposed by Dr. Hamid Sarbazi- Azad (Professor of Computer Engineering at Sharif University of Technology) in 2000 and called "stupid sort" (not to be confused with bogosort), and then later on described by Dick Grune and named "gnome sort". The algorithm
+always finds the first place where two adjacent elements are in the wrong order, and swaps them. It takes advantage of the fact that performing a swap can introduce a new out-of-order adjacent pair only next to the two swapped elements.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Solution:
+
+def gnome_sort(my_list):
+    i=0
+    while i<len(my_list):
+        if i==0:
+            i+=1
+        elif my_list[i]>=my_list[i-1]:
+            i+=1
+        else:
+            if i>0:
+                temp=my_list[i-1]
+                my_list[i-1]=my_list[i]
+                my_list[i]=temp
+                i-=1
+    return my_list
+my_list=[34, 2, 23, 67, 1, 45, 78, 12]
+gnome_sort(my_list)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output:
+
+[1, 2, 12, 23, 34, 45, 67, 78]
