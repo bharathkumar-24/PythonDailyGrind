@@ -18,7 +18,6 @@ SOLUTION:
 def ContainsDuplicates(nums,k):
     seen=set()
     for i,num in enumerate(nums):
-        print(i,num)
         if num in seen:
             return True
         seen.add(num)
