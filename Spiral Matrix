@@ -1,0 +1,41 @@
+Q.  Given an m x n matrix, return all elements of the matrix in spiral order.
+
+Example 1:
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,2,3,6,9,8,7,4,5]
+Example 2:
+
+
+Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+
+
+SOLUTION:
+
+def spiral_matrix(matrix):
+    ret=[]
+    while matrix:
+
+        # first row
+        ret+=(matrix.pop(0))
+
+        # last column
+        if matrix and matrix[0]:
+            for row in matrix:
+                ret.append(row.pop())
+
+        # last row in reverse
+        if matrix:
+            ret+=matrix.pop()[::-1]
+            print(matrix)
+
+        # first cloumn in reverse
+        if matrix and matrix[::-1]:
+            for row in matrix:
+                print(matrix)
+                ret.append(row.pop(0))
+    return ret
+
+matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+print(spiral_matrix(matrix))
+ 
