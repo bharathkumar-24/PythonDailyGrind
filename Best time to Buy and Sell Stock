@@ -1,0 +1,23 @@
+You are given an array prices where prices[i] is the price of a given stock on the ith day.
+
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+SOLUTION:
+
+def profit(prices):
+    if not prices or len(prices)==1:
+        return 0  
+    else :
+        profit=0
+        for i in range(len(prices)-1):
+            buy=prices[i]
+            sell=max(prices[i::])
+            if sell-buy> profit:
+                profit=sell-buy
+                print(buy,sell)
+    return profit
+            
+prices =[2,4,1]
+print(profit(prices))
