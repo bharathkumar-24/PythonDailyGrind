@@ -1,0 +1,39 @@
+Q2. Find common words in any given two sentences and return them sorted alphabetically.
+Constraints
+•	The input variables sentence1 and sentence2 must be of type str.
+•	The input sentences should not be empty.
+•	The sentences can contain any characters, including letters, numbers, punctuation marks, and whitespace.
+•	The sentences can be of any length, from empty strings to very long sentences.
+•	The sentences are case-insensitive, meaning that the comparison of words should be done in a case-insensitive manner.
+•	The sentences can contain duplicate words, but the output set should only contain unique common words.
+
+Test Case #1
+Input: ["Today is a great day to learn something new!", "Is today the day to learn?"]
+Output: ["day", "is", "learn", "to", "today"]
+Description: This test checks if the function can correctly identify common words regardless of their position in the sentence and handle a simple punctuation mark.
+
+Test Case #2
+Input: ["Learning to code: it's fun and engaging", "Engaging activities include learning to code."]
+Output: ["code", "engaging", "learning", "to"]
+Description: This test evaluates the function's ability to match words that are identical despite the presence of punctuation and possessive forms nearby.
+
+Test Case #3
+Input: ["The cat's favorite toy", "The favorite toy of the cat is here."]
+Output: ["favorite", "the", "toy"]
+Description: This test verifies if the function can correctly identify common words, including those preceded by possessive markers.
+
+SOLUTION:
+
+import re
+def CommonWords(lst):
+    sentence1=re.sub(r'[^A-Za-z0-9 ]+', '',lst[0].lower())
+    sentence2=re.sub(r'[^A-Za-z0-9 ]+', '',lst[1].lower())
+    result=[]
+    for i in sentence1.split():
+        for j in sentence2.split():
+            if i==j:
+                result.append(j)
+    return sorted(set(result))
+
+lst=["Learning to code: it's fun and engaging", "Engaging activities include learning to code."]
+print(CommonWords(lst))
