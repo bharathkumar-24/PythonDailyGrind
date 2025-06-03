@@ -1,0 +1,41 @@
+Find the median of two sorted arrays.
+Constraints
+•	The input variables nums1 and nums2 are both lists of integers.
+•	The lists nums1 and nums2 are sorted in ascending order.
+•	The lengths of nums1 and nums2 can be different.
+•	The lengths of nums1 and nums2 can be zero (empty lists).
+•	The integers in nums1 and nums2 can be positive, negative, or zero.
+•	The integers in nums1 and nums2 can be duplicates.
+
+Test Case #1
+Input: {"nums1": [1, 12, 15, 26, 38], "nums2": [2, 13, 17, 30, 45]}
+Output: 16
+Description: Both arrays have no common elements and their elements are interleaved. The merged array [1, 2, 12, 13, 15, 17, 26, 30, 38, 45]
+has an even length of 10, thus the median is the average of the 5th (15) and 6th (17) elements.
+
+Test Case #2
+Input: {"nums1": [-5, 3, 6, 12, 15], "nums2": [-12, -10, -6, -3, 4, 10]}
+Output: 3
+Description: Arrays include both negative and positive integers. The merged array [-12, -10, -6, -5, -3, 3, 4, 6, 10, 12, 15] 
+has an odd length of 11, making 3 the median element.
+
+Test Case #3
+Input: {"nums1": [], "nums2": [-5, -3, 0, 3, 5]}
+Output: 0
+Description: One array is empty, and the other one contains a mix of negative, zero, and positive values. 
+The merged array is [-5, -3, 0, 3, 5], which has an odd length of 5, making 0 the median element.
+
+SOLUTION:
+
+def Median(nums1,nums2):
+    merged=sorted(nums1+nums2)
+    n=len(merged)
+    if n%2!=0:
+        return merged[n//2]
+    else:
+        print(merged[5])
+        return (merged[(n//2)-1]+merged[(n//2)])/2
+
+nums1=[1, 12, 15, 26, 38]
+nums2=[2, 13, 17, 30, 45]
+print(Median(nums1,nums2))
