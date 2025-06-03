@@ -1,0 +1,30 @@
+Find the key of the highest value in a given dictionary. If there is more than one record with the highest value, sort their keys in ascending order
+and return the first.
+
+Constraints
+•	The input variable dct must be a dictionary.
+
+Test Case #1
+Input: {"date": 3, "apple": 5, "banana": 2, "cherry": 5}
+Output: "apple"
+Description: This case tests the function"s ability to handle multiple keys with the same highest value and return the key that comes first in lexicographical order.
+
+Test Case #2
+Input: {"car": 10, "bike": 15, "truck": 20, "scooter": 20}
+Output: "scooter"
+Description: This case examines the function"s behavior with the maximum values and ensures it picks the correct lexicographically smallest key among the highest values.
+
+Test Case #3
+Input: c
+Output: "a"
+Description: This case challenges the function to handle ties among multiple highest values and determine the smallest key in ascending order.
+
+SOLUTION:
+
+def HighestValue(my_dict):
+    my_dict=dict(sorted(my_dict.items(),key=lambda x : x[1],reverse=True))
+    return list(my_dict.keys())[0]
+    
+my_dict={"a": 2, "b": 2, "x": 1, "y": 1, "z": 2}
+print(HighestValue(my_dict))
+
