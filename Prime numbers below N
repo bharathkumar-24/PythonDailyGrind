@@ -1,0 +1,42 @@
+Q3. Return all prime numbers below N.
+Constraints
+1. The input variable n must be an integer.
+2. The value of n must be greater than or equal to 2.
+
+Test Case #1
+Input: 35
+Output: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
+Description: This test case checks the function's capability to correctly identify and return all
+prime numbers below 35, including prime numbers in the range of single and double digits.
+
+Test Case #2
+Input: 50
+Output: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+Description: The function is tested for its ability to handle a medium-sized input and effectively
+filter out primes below 50, ensuring non-prime larger values are excluded.
+
+Test Case #3
+Input: 100
+Output: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89,
+97]
+
+Description: This case assesses the algorithm's performance on a larger input size, ensuring it
+accurately finds all prime numbers below 100.
+
+SOLUTION:
+
+def PrimeNumber(num):
+    result=[]
+    for i in range(2,num+1):
+        if prime(i):
+            result.append(i)
+    return result
+def prime(x):
+    for i in range(2,x):
+        if x%i==0:
+            return False
+    else:
+        return True
+num=50
+print(PrimeNumber(num))
+            
