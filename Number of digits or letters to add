@@ -1,0 +1,47 @@
+6. Given a unique text that consists of characters [a-j] & numbers [0-9], the text is unique because, for every character in the text, 
+its corresponding number must be present.
+
+The mapping is as follows: 'a' ↔ 0, 'b' ↔ 1, 'c' ↔ 2, 'd' ↔ 3, 'e' ↔ 4, 'f' ↔ 5, 'g' ↔ 6, 'h' ↔ 7, 'i' ↔ 8, 'j' ↔ 9.
+For example, 'bj19' is balanced as 'b' has corresponding number '1' & 'j' has corresponding number '9'. In contrast, the example 'abc1' is 
+unbalanced as it is missing the digits that should correspond to 'a' and 'c' (i.e., '0' and '2'). Also, the example 'd345' is unbalanced as it is 
+missing the corresponding letters for the digits '4' and '5', which are 'e' and 'f'. Count the number of additional characters/digits that need to 
+be added to balance the given text.
+
+Constraints
+•	The input variable text is a string.
+•	The characters in the text can only be lowercase letters from 'a' to 'j' and digits from '0' to '9'.
+•	The length of the text can be any positive integer.
+
+Test Case #1
+Input: "bj19d345"
+Output: 2
+have -"b-1" , "d-3", "j-9"
+not have - 3,5 
+count=2
+
+Test Case #2
+Input: "a0f5h7"
+Output: 0
+have= "a-0", "f-5", "h-7"
+count=0
+
+Test Case #3
+Input: "a1f4i7"
+Output: 6
+dont have a,1,f,4,i,7
+
+SOLUTION:
+
+def fun(s):
+    my_dict={'a':'0','b':'1','c':'2','d':'3','e':'4','f':'5','g':'6','h':'7','i':'8','j':'9'}
+    letters = set(c for c in s if c.isalpha())
+    digits = set(c for c in s if c.isdigit())
+    missing=0
+    for key,value in my_dict.items():
+        if key in letters and value not in digits:
+            missing+=1
+        if key not in letters and value in digits:
+            missing+=1
+    return missing
+s="a1f4i7"
+print(fun(s))
