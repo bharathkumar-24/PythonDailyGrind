@@ -1,0 +1,41 @@
+Q. Count the number of words in a given sentence. A word is defined as any sequence of characters separated by whitespace. Punctuation, hyphens, and 
+underscores that appear within or around words are not treated as separators.
+
+Constraints
+•	The input variable sentence must be a string.
+
+Test Case #1
+Input: "The quick brown fox jumps over a lazy dog"
+Output: 9
+Description: This test case evaluates the function"s ability to count words in a common English sentence without punctuation.
+
+Test Case #2
+Input: "Hello, world! This-is_a test."
+Output: 4
+Description: This test checks the function"s capability to correctly split and count words in a sentence containing various punctuation marks and separators.
+
+Test Case #3
+Input: " Multiple spaces between some of the words "
+Output: 7
+Description: This case verifies how the function handles sentences with irregular spacing, including leading and trailing spaces.
+
+SOLUTION:
+
+#def CountWords(sentence):
+#    lst=sentence.strip().split()
+#    return len(lst)
+
+#def CountWords(sentence):
+#    count=sentence.strip().count(' ')
+#    return count+1
+
+
+def CountWords(sentence):
+    count=0
+    for i in sentence.strip():
+        if i==' ':
+            count+=1
+    return count+1
+            
+sentence= "The quick brown fox jumps over a lazy dog"
+print(CountWords(sentence))
