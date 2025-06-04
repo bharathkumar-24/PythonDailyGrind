@@ -1,0 +1,40 @@
+Q. Find non-repeated words in any given 2 sentences.
+
+Constraints
+•	The input variables sentence1 and sentence2 must be of type str.
+•	There are no specific constraints on the length or format of the sentences.
+
+Test Case #1
+Input: ["The cat in the hat", "A cat in a mat"]
+Output: ["The", "hat", "A", "a", "mat"]
+Description: This tests the function’s ability to identify non-repeated words between sentences with slight variations and common stop words.
+
+Test Case #2
+Input: ["Innovation distinguishes between a leader and a follower", "Creativity is thinking up new things, Innovation is doing new things"]
+Output: ["distinguishes", "between", "leader", "and", "follower", "Creativity", "is", "thinking", "up", "new", "things,"]
+Description: This case evaluates the algorithm’s handling of longer sentences with multiple repeated and unique words.
+
+Test Case #3
+Input: ["", "The quick brown fox jumps over the lazy dog"]
+Output: ["The", "quick", "brown", "fox", "jumps", "over", "lazy", "dog"]
+Description: The function is tested with an empty string for one sentence and a list of non-repeating words in another to ensure correct identification
+when no commonality exists.
+
+SOLUTION:
+
+from collections import Counter
+def NonRepeatedWords(lst):
+    sentence1=re.sub(r'[^A-Za-z0-9 ]+', '',lst[0].lower())
+    sentence2=re.sub(r'[^A-Za-z0-9 ]+', '',lst[1].lower())
+    result=[]
+    for i in sentence1.split():
+        if i not in sentence2.split():
+            result.append(i)
+    for i in sentence2.split():
+        if i not in sentence1.split():
+            result.append(i)
+    return sorted(set(result))
+    return result
+  
+lst=["The cat in the hat", "A cat in a mat"]
+NonRepeatedWords(lst)
