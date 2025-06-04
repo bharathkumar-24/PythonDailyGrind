@@ -1,0 +1,35 @@
+Q. Write a function to find the square root of all column values in a DataFrame.
+Note: The function should only compute the square root for non-negative numbers (i.e., values greater than or equal to 0). 
+If any value in the DataFrame is negative, the function should return None for that particular value.
+
+Constraints
+•	The input variable df must be a pandas DataFrame.
+•	The input variable column_name must be a string representing the name of a column in the DataFrame df
+
+Test Case #1
+Input: {"df": {"A": [4, 16, 25, 36], "B": [1, 4, 9, 16]}}
+Output: {"A": [2, 4, 5, 6], "B": [1, 2, 3, 4]}
+Description: This test case checks the function with a DataFrame containing perfect squares in both columns.
+
+Test Case #2
+Input: {"df": {"A": [1, 0, 9, 81], "B": [1, 0, 16, 64]}}
+Output: {"A": [1, 0, 3, 9], "B": [1, 0, 4, 8]}
+Description: This case tests the function with columns that include 0 and perfect squares.
+
+Test Case #3
+Input: {"df": {"A": [0.25, 2.25, 6.25, 12.25], "B": [0.25, 1, 2.25, 6.25]}}
+Output: {"A": [0.5, 1.5, 2.5, 3.5], "B": [0.5, 1, 1.5, 2.5]}
+Description: This case examines the function with columns containing floating-point values which are also perfect squares.
+
+SOLUTION:
+
+import pandas as pd
+
+def Sqrt(my_dict):
+    df=pd.DataFrame(my_dict)
+    df=df.applymap(lambda x: x**2 if x>=0 else None)
+    result=df.to_dict(orient='dict')
+    return result
+    
+my_dict= {"A": [4, 16, 25, 36], "B": [1, 4, 9, 16]}
+print(Sqrt(my_dict))
