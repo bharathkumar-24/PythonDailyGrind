@@ -1,0 +1,6 @@
+Q.Find the common elements between two list in O(n) time
+
+def CommonElements(lst1,lst2):
+    s1=set(lst1)
+    s2=set(lst2)
+    return s1.intersection(s2)
