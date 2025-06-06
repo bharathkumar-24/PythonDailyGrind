@@ -1,0 +1,7 @@
+Q. You are given a positive integer n and an integer k. You need to rotate the digits of the number n by k places to the right. For example, 
+if n = 12345 and k = 2, the result after rotating the digits to the right by 2 places would be 45123.
+
+def RotateElements(n,k):
+    s=str(n)
+    result=s[-k::]+s[:-k]
+    return result
