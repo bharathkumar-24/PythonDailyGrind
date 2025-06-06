@@ -1,0 +1,6 @@
+Q.Find the sum of the middle elements of two sorted array
+
+def MiddleElements(lst1,lst2):
+    mid1=len(lst1)//2
+    mid2=len(lst2)//2
+    return lst1[mid1]+lst2[mid2]
