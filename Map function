@@ -1,0 +1,7 @@
+Q.Implement the map()
+
+def Map(fun,iterable):
+    result=[]
+    for i in iterable:
+        result.append(fun(i))
+    return result
