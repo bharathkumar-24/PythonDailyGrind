@@ -1,0 +1,17 @@
+Q.find a list in a reverse order using recursion
+
+def Reverse(lst,result=[]):
+    if len(lst)==0:
+        return result
+    else:
+        result.append(lst.pop())
+        return Reverse(lst,result)
+
+
+
+def Reverse(lst):
+    if len(lst) == 0:
+        return []
+    else:
+        last = lst.pop()
+        return [last] + Reverse(lst)
