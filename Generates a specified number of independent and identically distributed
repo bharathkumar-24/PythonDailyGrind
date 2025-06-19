@@ -1,0 +1,29 @@
+Q.Write a function that generates a specified number of independent and identically distributed (i.i.d.) draws from a uniform distribution between 0 and 1.
+The function should take the number of draws as an argument and return a list of random numbers.
+Note: Use a fixed random seed of 42 to ensure that the results are reproducible.
+
+Test Case #1
+Input: 5
+Output: "[0.37, 0.95, 0.73, 0.6, 0.16]"
+Description: This test case assesses the function"s correctness in generating a small number of i.i.d. draws from the uniform distribution between 0 and 1.
+
+Test Case #2
+Input: 100
+Output: "A list of 100 random numbers between 0 and 1, e.g., [0.134, 0.245, 0.756, ..., 0.890]. "
+Description: This test validates the function"s ability to handle a larger number of i.i.d. draws, ensuring the output remains within the expected range and 
+maintains the properties of the distribution.
+
+Test Case #3
+Input: 0
+Output: "An empty list, []."
+Description: This case challenges the function"s handling of the edge case where no draws are requested, ensuring it returns an empty list appropriately.
+
+SOLUTION:
+
+import random
+def RandomNumber(n):
+    lst=[round(random.random(),2) for i in range(n)]
+    return lst
+
+n=12
+print(RandomNumber(n))
