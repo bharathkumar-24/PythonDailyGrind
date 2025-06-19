@@ -1,0 +1,30 @@
+Q. Write a function to reverse a string.
+Constraints
+•	The input variable string must be of type str.
+•	There are no specific constraints on the length or content of the string.
+
+Test Case #1
+Input: "G3n3r@tiv3AI"
+Output: "IA3v1t@r3n3G"
+Description: This test case examines the function’s capacity to handle a mix of uppercase letters, lowercase letters, numbers, and special characters 
+without altering their order other than reversing the string.
+
+Test Case #2
+Input: "Le3tsWriT#S0meTestCases!"
+Output: "!sesaCtseT0Sem#TirWsTe3L"
+Description: This case tests the function with a longer string composed of varied characters, including uppercase and lowercase letters, numbers, and 
+special characters, to ensure the reversal is accurately managed.
+
+Test Case #3
+Input: "Palindrome123454321emordnilaP"
+Output: "Pladnirome123454321emordnilaP"
+Description: The function is tested on a palindrome string combined with numbers to verify that the reversal properly maintains the integrity of the 
+mirrored characters in the original sequence.
+
+SOLUTION:
+
+def ReverseString(s):
+    return s[::-1]
+
+s="G3n3r@tiv3AI"
+print(ReverseString(s))
