@@ -1,0 +1,13 @@
+Q. Bheem has N friends and he has a ladoo for each day given an list denoting on which day ith index friend wants a ladoo if bheem is 
+unable to give a ladoo to the friend he loses his friendship with them find out the maximum number of friends he can have at the end
+Example: N=5
+List of days=[3,3,1,2,4]
+Output=4
+
+SOLUTION:
+
+def MaxFriends(arr):
+    return len(set(arr))
+
+arr=[3,3,1,2,2,4]
+print(MaxFriends(arr))
