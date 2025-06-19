@@ -1,0 +1,21 @@
+Q. Given an array list of non-negative integers, return the maximum product of two numbers possible.
+Input: arr[] = [1, 4, 3, 6, 7, 0] 
+Output: 42
+Explanation: 6 and 7 have the maximum product.
+
+SOLUTION:
+
+def MaxProduct(arr):
+    max_product=0
+    sub_list=[]
+    for i in range(2):
+        sub_list.append(arr[i])
+    for i in range(2,len(arr)):
+        product=sub_list[0]*sub_list[1]
+        sub_list.pop(sub_list.index(min(sub_list[0],sub_list[1])))
+        sub_list.append(arr[i])
+        max_product=max(product,max_product)
+    return max_product
+arr=[1, 4, 3, 6, 7, 0] 
+print(MaxProduct(arr))
+        
