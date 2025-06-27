@@ -1,4 +1,4 @@
-Q3. Return all prime numbers below N.
+Q. Return all prime numbers below N.
 Constraints
 1. The input variable n must be an integer.
 2. The value of n must be greater than or equal to 2.
