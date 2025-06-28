@@ -2,7 +2,7 @@ Q. Count the number of words in a given sentence. A word is defined as any seque
 underscores that appear within or around words are not treated as separators.
 
 Constraints
-•	The input variable sentence must be a string.
+• The input variable sentence must be a string.
 
 Test Case #1
 Input: "The quick brown fox jumps over a lazy dog"
