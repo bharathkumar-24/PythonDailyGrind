@@ -5,6 +5,7 @@ Return the index of the word in sentence (1-indexed) where searchWord is a prefi
 A prefix of a string s is any leading contiguous substring of s.
 
 Example 1:
+
 Input: sentence = "i love eating burger", searchWord = "burg"
 Output: 4
 Explanation: "burg" is prefix of "burger" which is the 4th word in the sentence.
