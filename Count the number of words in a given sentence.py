@@ -1,4 +1,5 @@
-Q. Count the number of words in a given sentence. A word is defined as any sequence of characters separated by whitespace. Punctuation, hyphens, and 
+"""
+Count the number of words in a given sentence. A word is defined as any sequence of characters separated by whitespace. Punctuation, hyphens, and 
 underscores that appear within or around words are not treated as separators.
 
 Constraints
@@ -21,14 +22,15 @@ Description: This case verifies how the function handles sentences with irregula
 
 SOLUTION:
 
-#def CountWords(sentence):
-#    lst=sentence.strip().split()
-#    return len(lst)
+def CountWords(sentence):
+    lst=sentence.strip().split()
+    return len(lst)
 
-#def CountWords(sentence):
-#    count=sentence.strip().count(' ')
-#    return count+1
+def CountWords(sentence):
+    count=sentence.strip().count(' ')
+    return count+1
 
+"""
 
 def CountWords(sentence):
     count=0
