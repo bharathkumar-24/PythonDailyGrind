@@ -1,3 +1,4 @@
+""" 
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 
 Notice that the solution set must not contain duplicate triplets.
@@ -23,7 +24,7 @@ Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
 
 SOLUTION:
-
+"""
 def three_sum(nums):
     new_list=[]
     for i in range(len(nums)):
