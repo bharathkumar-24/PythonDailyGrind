@@ -1,5 +1,5 @@
-
-Q. You have a bomb to defuse, and your time is running out! Your informer will provide you with a circular array code of length of n 
+"""
+You have a bomb to defuse, and your time is running out! Your informer will provide you with a circular array code of length of n 
 and a key k.
 
 To decrypt the code, you must replace every number. All the numbers are replaced simultaneously.
@@ -30,7 +30,7 @@ Output: [12,5,6,13]
 Explanation: The decrypted code is [3+9, 2+3, 4+2, 9+4]. Notice that the numbers wrap around again. If k is negative, the sum is of the previous numbers.
 
 SOLUTION:
-
+"""
 
 def decrypt(code, k):
     result=[]
