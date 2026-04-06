@@ -1,7 +1,8 @@
-
-Q. Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
+"""
+Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
 SOLUTION:
+"""
 
 def findDisappearedNumbers(nums):
     s1=set(i for i in range(1,len(nums)+1))
