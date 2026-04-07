@@ -1,6 +1,7 @@
-Q.Print all factors of a given number provided by the user?
+"""Q.Print all factors of a given number provided by the user?
 --------------------------------------------------------------------------------------------------------------------------------
 Solution:
+"""
 
 def factors(number):
     my_list=[]
@@ -10,8 +11,11 @@ def factors(number):
     return my_list
 number=int(input("enter any number:"))
 print(f"factors the {number} are {factors(number)}")
+
+"""
 ----------------------------------------------------------------------------------------------------------------------------------------
 Output:
 
 enter any number: 6
 factors the 6 are [1, 2, 3, 6]
+"""
