@@ -1,4 +1,6 @@
+"""
 Q. Find non-repeated words in any given 2 sentences.
+
 
 Constraints
 •	The input variables sentence1 and sentence2 must be of type str.
@@ -21,6 +23,7 @@ Description: The function is tested with an empty string for one sentence and a 
 when no commonality exists.
 
 SOLUTION:
+"""
 
 from collections import Counter
 def NonRepeatedWords(lst):
