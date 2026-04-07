@@ -1,3 +1,4 @@
+"""
 Q, You are given an array nums of n integers and two integers k and x.
 
 The x-sum of an array is calculated by the following procedure:
@@ -29,6 +30,7 @@ Explanation:
 Since k == x, answer[i] is equal to the sum of the subarray nums[i..i + k - 1].
 
 SOLUTION:
+"""
 
 from collections import Counter
 
