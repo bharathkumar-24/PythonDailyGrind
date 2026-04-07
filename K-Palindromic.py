@@ -1,3 +1,4 @@
+"""
 You are given two positive integers n and k.
 
 An integer x is called k-palindromic if:
@@ -10,7 +11,8 @@ Return the count of good integers containing n digits.
 
 Note that any integer must not have leading zeros, neither before nor after rearrangement. For example, 1010 cannot be rearranged to form 101.
 
- SOLUTION:
+SOLUTION:
+"""
 
 def fun(n,k):
     count=0
