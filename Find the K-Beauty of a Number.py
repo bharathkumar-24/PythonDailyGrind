@@ -1,4 +1,4 @@
-
+"""
 Q. The k-beauty of an integer num is defined as the number of substrings of num when it is read as a string that meet the following conditions:
 
 It has a length of k.
@@ -33,6 +33,7 @@ Explanation: The following are the substrings of num of length k:
 Therefore, the k-beauty is 2.
  
 SOLUTION:
+"""
 
 def divisorSubstrings(num, k):
     s=str(num)
