@@ -1,3 +1,4 @@
+"""
 Write an algorithm to determine if a number n is happy.
 
 A happy number is a number defined by the following process:
@@ -22,6 +23,7 @@ Input: n = 2
 Output: false
  
 SOLUTION:
+"""
 
 def isHappy(n):
     if (n==1 or n==7):
