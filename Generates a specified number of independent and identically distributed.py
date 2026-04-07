@@ -1,3 +1,4 @@
+"""
 Q. Write a function that generates a specified number of independent and identically distributed (i.i.d.) draws from a uniform distribution between 0 and 1.
 The function should take the number of draws as an argument and return a list of random numbers.
 Note: Use a fixed random seed of 42 to ensure that the results are reproducible.
@@ -19,6 +20,7 @@ Output: "An empty list, []."
 Description: This case challenges the function"s handling of the edge case where no draws are requested, ensuring it returns an empty list appropriately.
 
 SOLUTION:
+"""
 
 import random
 def RandomNumber(n):
