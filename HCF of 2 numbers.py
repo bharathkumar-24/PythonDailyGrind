@@ -1,6 +1,5 @@
-Q. User will provide 2 numbers you have to find the HCF of those 2 numbers
-----------------------------------------------------------------------------------------------------------------------------------------------------
-Solution:
+# Q. User will provide 2 numbers you have to find the HCF of those 2 numbers
+
 
 def hcf_fun(a,b):
     list1=[]
@@ -22,9 +21,11 @@ def hcf_fun(a,b):
 a=int(input("enter the first number:"))
 b=int(input("enter the second number:"))
 print("hcf of the number",a,"and",b,"is:",hcf_fun(a,b))      
------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"""-----------------------------------------------------------------------------------------------------------------------------------------------------
 Output:
 
 enter the first number: 40
 enter the second number: 56
 hcf of the number 40 and 56 is: 8
+"""
