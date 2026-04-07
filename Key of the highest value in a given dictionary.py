@@ -1,3 +1,4 @@
+"""
 Find the key of the highest value in a given dictionary. If there is more than one record with the highest value, sort their keys in ascending order
 and return the first.
 
@@ -20,6 +21,7 @@ Output: "a"
 Description: This case challenges the function to handle ties among multiple highest values and determine the smallest key in ascending order.
 
 SOLUTION:
+"""
 
 def HighestValue(my_dict):
     my_dict=dict(sorted(my_dict.items(),key=lambda x : x[1],reverse=True))
