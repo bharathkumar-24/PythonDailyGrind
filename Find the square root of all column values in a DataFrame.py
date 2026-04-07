@@ -1,3 +1,4 @@
+"""
 Q. Write a function to find the square root of all column values in a DataFrame.
 Note: The function should only compute the square root for non-negative numbers (i.e., values greater than or equal to 0). 
 If any value in the DataFrame is negative, the function should return None for that particular value.
@@ -22,6 +23,7 @@ Output: {"A": [0.5, 1.5, 2.5, 3.5], "B": [0.5, 1, 1.5, 2.5]}
 Description: This case examines the function with columns containing floating-point values which are also perfect squares.
 
 SOLUTION:
+"""
 
 import pandas as pd
 
