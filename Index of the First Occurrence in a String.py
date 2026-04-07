@@ -1,3 +1,4 @@
+"""
 Q. Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
 Example 1:
@@ -13,15 +14,13 @@ Output: -1
 Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 SOLUTION:
+"""
 
 def strStr(haystack, needle):
     if needle in haystack:
         return haystack.find(needle)
     else:
-        return -1
-
-    # haystack.find(needle)
-    
+        return -1 
 haystack = "leetcode"
 needle = "leeto"   
 print(strStr(haystack, needle))
