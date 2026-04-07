@@ -1,6 +1,5 @@
-Q. User will provide 2 numbers you have to find the by LCM of those 2 numbers
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Solution:
+# Q. User will provide 2 numbers you have to find the by LCM of those 2 numbers
+
 
 # hcf(a,b) * lcm(a,b) = a*b
 # lcm(a,b)=(a*b)/hcf(a,b)
@@ -25,9 +24,10 @@ def lcm_fun(a,b):
 a=int(input("enter the first number:"))
 b=int(input("enter the second number:"))
 print("lcm of the number",a,"and",b,"is:",lcm_fun(a,b))     
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Output:
 
+"""
 enter the first number: 40
 enter the second number: 56
 lcm of the number 40 and 56 is: 280
+"""
+
