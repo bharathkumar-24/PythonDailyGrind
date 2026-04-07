@@ -1,5 +1,5 @@
-User will input (3ages).Find the oldest one.
----------------------------------------------------------------------------------------------------------
+#User will input (3ages). Find the oldest one.
+
 def oldest_age(age1,age2,age3):
     if age1>age2 and age1>age3:
         return age1
