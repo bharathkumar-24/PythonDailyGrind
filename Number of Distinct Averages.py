@@ -1,4 +1,5 @@
-Q. You are given a 0-indexed integer array nums of even length.
+"""
+You are given a 0-indexed integer array nums of even length.
 
 As long as nums is not empty, you must repetitively:
 Find the minimum number in nums and remove it.
@@ -28,6 +29,7 @@ Explanation:
 There is only one average to be calculated after removing 1 and 100, so we return 1.
 
 SOLUTION:
+"""
 
 def distinctAverages(nums):
     nums.sort()
