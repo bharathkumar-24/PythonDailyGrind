@@ -1,3 +1,4 @@
+"""
 Given an integer array nums, handle multiple queries of the following type:
 
 Calculate the sum of the elements of nums between indices left and right inclusive where left <= right.
@@ -20,6 +21,7 @@ numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
 numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 
 SOLUTION:
+"""
 
 def fun(nums):
     arr=nums[0][0]
