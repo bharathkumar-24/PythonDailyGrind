@@ -1,4 +1,5 @@
-Q. Given a unique text that consists of characters [a-j] & numbers [0-9], the text is unique because, for every character in the text, 
+"""
+Given a unique text that consists of characters [a-j] & numbers [0-9], the text is unique because, for every character in the text, 
 its corresponding number must be present.
 
 The mapping is as follows: 'a' ↔ 0, 'b' ↔ 1, 'c' ↔ 2, 'd' ↔ 3, 'e' ↔ 4, 'f' ↔ 5, 'g' ↔ 6, 'h' ↔ 7, 'i' ↔ 8, 'j' ↔ 9.
@@ -31,6 +32,7 @@ Output: 6
 dont have a,1,f,4,i,7
 
 SOLUTION:
+"""
 
 def fun(s):
     my_dict={'a':'0','b':'1','c':'2','d':'3','e':'4','f':'5','g':'6','h':'7','i':'8','j':'9'}
