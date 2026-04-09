@@ -1,10 +1,11 @@
-Q. Given an array list of non-negative integers, return the maximum product of two numbers possible.
+"""
+Given an array list of non-negative integers, return the maximum product of two numbers possible.
 Input: arr[] = [1, 4, 3, 6, 7, 0] 
 Output: 42
 Explanation: 6 and 7 have the maximum product.
 
 SOLUTION:
-
+"""
 def MaxProduct(arr):
     max_product=0
     sub_list=[]
