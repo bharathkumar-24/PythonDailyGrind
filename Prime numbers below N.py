@@ -1,4 +1,5 @@
-Q. Return all prime numbers below N.
+"""
+Return all prime numbers below N.
 Constraints
 1. The input variable n must be an integer.
 2. The value of n must be greater than or equal to 2.
@@ -24,6 +25,7 @@ Description: This case assesses the algorithm's performance on a larger input s
 accurately finds all prime numbers below 100.
 
 SOLUTION:
+"""
 
 def PrimeNumber(num):
     result=[]
