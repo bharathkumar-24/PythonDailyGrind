@@ -1,4 +1,4 @@
-Q.Find the MinMax element in the list using divide and conquer strategy
+#Find the MinMax element in the list using divide and conquer strategy
 
 def MinMax(arr, low, high):
     if low == high:
