@@ -1,6 +1,5 @@
-Write a Python program that uses the Sieve of Eratosthenes method to compute prime numbers up to a specified number.
+# Write a Python program that uses the Sieve of Eratosthenes method to compute prime numbers up to a specified number.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def SOE_fun(n):
     my_list=[]
     for i in range(2,n+1):
