@@ -1,4 +1,4 @@
-Q.Implement the map()
+#Q.Implement the map()
 
 def Map(fun,iterable):
     result=[]
