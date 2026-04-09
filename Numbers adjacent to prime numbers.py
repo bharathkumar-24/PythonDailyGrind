@@ -1,4 +1,4 @@
-Q. Write a Python program to find a list of all numbers that are adjacent to a prime number in the list, sorted without duplicates.
+"""Q. Write a Python program to find a list of all numbers that are adjacent to a prime number in the list, sorted without duplicates.
 
 Input:  [2, 17, 16, 0, 6, 4, 5]
 Output: [2, 4, 16]
@@ -8,9 +8,9 @@ Output: [1, 2, 16]
 
 Input:  [1, 2, 3, 5, 1, 16, 7, 11, 4]
 Output: [1, 2, 3, 4,16]
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Solution:
 
+Solution:
+"""
 def fun(my_list):
     dict1={}
     for i in my_list:
