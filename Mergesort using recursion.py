@@ -1,4 +1,4 @@
-Q.Implement the Mergesort using recursion.
+#Implement the Mergesort using recursion.
 
 def merge_sort(arr):
     if len(arr) <= 1:
@@ -7,7 +7,6 @@ def merge_sort(arr):
     left_half = merge_sort(arr[:mid])
     right_half = merge_sort(arr[mid:])
     return merge(left_half, right_half)
-
 def merge(left, right):
     merged = []
     i = j = 0
