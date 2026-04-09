@@ -1,4 +1,5 @@
-Q. Find the median of two sorted arrays.
+"""
+Find the median of two sorted arrays.
 Constraints
 •	The input variables nums1 and nums2 are both lists of integers.
 •	The lists nums1 and nums2 are sorted in ascending order.
@@ -26,6 +27,7 @@ Description: One array is empty, and the other one contains a mix of negative, z
 The merged array is [-5, -3, 0, 3, 5], which has an odd length of 5, making 0 the median element.
 
 SOLUTION:
+"""
 
 def Median(nums1,nums2):
     merged=sorted(nums1+nums2)
