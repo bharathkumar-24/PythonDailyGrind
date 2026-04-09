@@ -1,0 +1,11 @@
+# Find the reverse of a number provided by the user(any number of digit) .
+
+def fun(n):
+    s=str(n)
+    if s[0]=='-':
+        reverse_num="-"+s[:-(len(s)):-1]
+    else:
+        reverse_num=s[::-1]
+    return int(reverse_num)
+n=int(input("enter a number"))
+fun(n)
