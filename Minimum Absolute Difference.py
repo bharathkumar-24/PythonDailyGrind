@@ -1,4 +1,4 @@
-Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.
+"""Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements.
 
 Return a list of pairs in ascending order(with respect to pairs), each pair [a, b] follows
 
@@ -21,6 +21,7 @@ Input: arr = [3,8,-10,23,19,-4,-14,27]
 Output: [[-14,-10],[19,23],[23,27]]
 
 SOLUTION:
+"""
 
 def MinimumDiff(arr):
     arr.sort()
