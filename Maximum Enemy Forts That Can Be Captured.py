@@ -1,4 +1,5 @@
-Q. You are given a 0-indexed integer array forts of length n representing the positions of several forts. forts[i] can be -1, 0, or 1 where:
+"""
+You are given a 0-indexed integer array forts of length n representing the positions of several forts. forts[i] can be -1, 0, or 1 where:
 
 -1 represents there is no fort at the ith position.
 0 indicates there is an enemy fort at the ith position.
@@ -26,6 +27,7 @@ Output: 0
 Explanation: Since no enemy fort can be captured, 0 is returned.
 
 SOLUTION:
+"""
 
 def captureForts(forts):
     max_forts=0
