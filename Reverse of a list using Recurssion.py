@@ -1,4 +1,4 @@
-Q.find a list in a reverse order using recursion
+#find a list in a reverse order using recursion
 
 def Reverse(lst,result=[]):
     if len(lst)==0:
