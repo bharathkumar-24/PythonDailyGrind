@@ -1,4 +1,5 @@
-Q. Write a function to reverse a string.
+"""
+Write a function to reverse a string.
 Constraints
 •	The input variable string must be of type str.
 •	There are no specific constraints on the length or content of the string.
@@ -22,6 +23,7 @@ Description: The function is tested on a palindrome string combined with numbers
 mirrored characters in the original sequence.
 
 SOLUTION:
+"""
 
 def ReverseString(s):
     return s[::-1]
