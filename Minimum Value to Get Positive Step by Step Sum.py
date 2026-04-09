@@ -1,4 +1,5 @@
-Q. Given an array of integers nums, you start with an initial positive value startValue.
+"""
+Given an array of integers nums, you start with an initial positive value startValue.
 
 In each iteration, you calculate the step by step sum of startValue plus elements in nums (from left to right).
 
@@ -29,6 +30,7 @@ Input: nums = [1,-2,-3]
 Output: 5
 
 SOLUTION:
+"""
 
 def minStartValue(nums):
     min_pos_num=1
