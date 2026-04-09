@@ -1,5 +1,5 @@
-
-Q. You are given a 0-indexed integer array nums, where nums[i] represents the score of the ith student. You are also given an integer k.
+"""
+You are given a 0-indexed integer array nums, where nums[i] represents the score of the ith student. You are also given an integer k.
 
 Pick the scores of any k students from the array so that the difference between the highest and the lowest of the k scores is minimized.
 
@@ -25,7 +25,7 @@ Explanation: There are six ways to pick score(s) of two students:
 The minimum possible difference is 2.
 
 SOLUTION:
-
+"""
 def minimumDifference(nums, k): 
     nums.sort()
     l,r=0,k-1
