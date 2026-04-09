@@ -1,3 +1,4 @@
+"""
 You may recall that an array arr is a mountain array if and only if:
 arr.length >= 3
 There exists some index i (0-indexed) with 0 < i < arr.length - 1 such that:
@@ -16,7 +17,7 @@ Output: 0
 Explanation: There is no mountain.
 
 SOLUTION:
-
+"""
 def LongestMountain(arr):
     ret=0
     for i in range(1,len(arr)-1):
