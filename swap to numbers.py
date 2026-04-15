@@ -1,5 +1,5 @@
-Q. User will input (2numbers).Write a program to swap the numbers
----------------------------------------------------------------------------
+# User will input (2numbers). Write a program to swap the numbers
+
 def swap_fun(a,b):
     x=a
     a=b
