@@ -1,4 +1,4 @@
-    
+"""    
 Given a number as an input, find the following smallest palindrome number. For simplicity, assume the input value will not exceed 1 million.
 The next palindrome may be greater than 1 million.
 
@@ -24,6 +24,7 @@ Description: This case tests the algorithm's efficiency with a six-digit number
 find the following palindrome in a sequence with a larger search space.
 
 SOLUTION:
+"""
 
 def fun(number):
     if Palindrome(number):
