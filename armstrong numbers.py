@@ -1,0 +1,11 @@
+# Print all the armstrong numbers in the range of 100 to 1000?
+
+for i in range(100,1000):
+    x=i
+    sum=0
+    while i>0:
+        digits=i%10
+        sum=sum+(digits)**3
+        i=i//10
+    if sum==x:
+        print(x)
