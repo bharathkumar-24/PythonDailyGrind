@@ -1,5 +1,5 @@
-.Write a program that will convert celsius value to fahrenheit
-------------------------------------------------------------------------------------------------------
+# Write a program that will convert celsius value to fahrenheit
+
 
   def conversion_fun(celsius):
     return float(celsius*1.8)+32
