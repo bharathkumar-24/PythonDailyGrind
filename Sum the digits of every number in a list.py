@@ -1,4 +1,5 @@
-Q. Sum the digits of every number in a list.
+"""
+Sum the digits of every number in a list.
 
 Constraints
 •	The input variable numbers is a list of integers.
@@ -26,6 +27,7 @@ Description: This case examines the function with complex numbers having mixed d
 and large numbers, to challenge the algorithm""s ability to process diverse digits correctly.
 
 SOLUTION
+"""
 
 import re
 def SumItems(lst):
