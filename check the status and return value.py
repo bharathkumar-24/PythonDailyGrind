@@ -1,11 +1,12 @@
- Given two integer variables a and b, and a boolean variable flag. The task is to check the status and return accordingly.
+"""
+Given two integer variables a and b, and a boolean variable flag. The task is to check the status and return accordingly.
 
     Return True for the following cases:
          1.Either a or b (not both) is non-negative and the flag is false.
          2.Both a and b are negative and the flag is true.
     Otherwise, return false.
-   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-   
+  """
+
 def checkStatus(a,b,flag):
     if a>0 or b>0 and flag==False:
         return True
