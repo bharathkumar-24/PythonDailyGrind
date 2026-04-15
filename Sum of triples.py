@@ -1,10 +1,12 @@
-Q. Write a Python program to determine which triples sum to zero from a given list of lists.
+"""
+Write a Python program to determine which triples sum to zero from a given list of lists.
     Input: [[1343532, -2920635, 332], [-27, 18, 9], [4, 0, -4], [2, 2, 2], [-20, 16, 4]]
     Output:[False, True, True, False, True]
     Input: [[1, 2, -3], [-4, 0, 4], [0, 1, -5], [1, 1, 1], [-2, 4, -1]]
     Output:[True, True, False, False, False]
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Solution:
+"""
 
 def fun(my_list):
     new_list=[]
@@ -16,6 +18,3 @@ def fun(my_list):
     return new_list
 my_list=[[1, 2, -3], [-4, 0, 4], [0, 1, -5], [1, 1, 1], [-2, 4, -1]]
 fun(my_list)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Output:
-[True, True, False, False, False]
