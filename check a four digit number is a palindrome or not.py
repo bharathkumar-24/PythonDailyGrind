@@ -1,5 +1,5 @@
- Write a program that will reverse a four digit number.Also it checks whether the reverse is true.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Write a program that will reverse a four digit number.Also it checks whether the reverse is true.
+
    def palindrome_fun(number):
     reverse=0
     thousands=number//1000
