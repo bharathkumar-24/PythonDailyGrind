@@ -1,5 +1,5 @@
-Write a program that take a user input of three angles and will find out whether it can form a triangle or not.
---------------------------------------------------------------------------------------------------------------------------------------------------------
+# Write a program that take a user input of three angles and will find out whether it can form a triangle or not.
+
 
 angle1=float(input("enter the first angel:"))
 angle2=float(input("enter the first angel:"))
