@@ -1,0 +1,10 @@
+# Write a program that will swap numbers
+
+a=int(input("enter the first number:"))
+b=int(input("enter the seconf number:"))
+x=b
+b=a
+a=x
+print(a,b)
+
+
