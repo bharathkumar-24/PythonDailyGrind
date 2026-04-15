@@ -1,4 +1,5 @@
-Q. Given a string s of zeros and ones, return the maximum score after splitting the string into two non-empty substrings (i.e. left substring and right substring).
+""" 
+Given a string s of zeros and ones, return the maximum score after splitting the string into two non-empty substrings (i.e. left substring and right substring).
 
 The score after splitting a string is the number of zeros in the left substring plus the number of ones in the right substring.
 
@@ -24,11 +25,10 @@ Explanation: When left = "00" and right = "111", we get the maximum score = 2 + 
 Example 3:
 
 Input: s = "1111"
-Output: 3
- 
+Output: 3 
 
 SOLUTION:
-
+"""
 
 def maxScore(s):
     max_score=0
