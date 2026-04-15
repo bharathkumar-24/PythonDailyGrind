@@ -1,5 +1,5 @@
-Q. Write a program that will give you the sum of 3 digits
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Write a program that will give you the sum of 3 digits
+
 def sum_fun(number,sum=0):
     
     if number<100 and number>999:
