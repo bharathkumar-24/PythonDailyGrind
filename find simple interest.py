@@ -1,5 +1,5 @@
-Write a program to find the simple interest when the value of principle,rate of interest and time period is given.
------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Write a program to find the simple interest when the value of principle,rate of interest and time period is given.
+
 def fun_SI(principle,rate_of_intrest,time):
     simple_intrest=float((principle*rate_of_intrest*time)/100)
     return simple_intrest
