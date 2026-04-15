@@ -1,5 +1,5 @@
-Q. Write a program to find the euclidean distance between two coordinates.
----------------------------------------------------------------------------------------------------------------------------
+# Write a program to find the euclidean distance between two coordinates.
+
 x1=int(input("enter the x cordinate of the first point"))
 y1=int(input("enter the y cordinate of the first point"))
 x2=int(input("enter the x cordinate of the second point"))
