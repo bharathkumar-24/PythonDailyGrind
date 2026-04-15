@@ -1,4 +1,5 @@
-Q. Write a Python program to sort numbers based on strings.
+"""
+Write a Python program to sort numbers based on strings.
 
  Input: six one four one two three
  Output: one two three four six
@@ -8,8 +9,9 @@ Q. Write a Python program to sort numbers based on strings.
 
  Input: nine eight seven six five four three two one
  Output one two three four five six seven eight nine
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Solution:
+"""
 
 def sort_numbers_by_string(input_string):
     number_map = {
@@ -31,7 +33,4 @@ def sort_numbers_by_string(input_string):
 
 input1 = "nine eight seven six five four three two one"
 print(sort_numbers_by_string(input1))  
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Output:
 
-one two three four five six seven eight nine
