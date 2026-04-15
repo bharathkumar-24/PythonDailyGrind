@@ -1,4 +1,5 @@
-Q. A string is good if there are no repeated characters.
+"""
+A string is good if there are no repeated characters.
 
 Given a string s, return the number of good substrings of length three in s.
 
@@ -21,6 +22,7 @@ Explanation: There are 7 substrings of size 3: "aab", "aba", "bab", "abc", "bca"
 The good substrings are "abc", "bca", "cab", and "abc".
 
 SOLUTION:
+"""
 
 def countGoodSubstrings(s,k):
     count=0
