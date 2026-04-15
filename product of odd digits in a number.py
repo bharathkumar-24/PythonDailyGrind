@@ -1,3 +1,4 @@
+"""
 Write a Python program to compute the product of the odd digits in a given number, or 0 if there aren't any.
     Input: 123456789
     Output: 945
@@ -7,7 +8,8 @@ Write a Python program to compute the product of the odd digits in a given numbe
     
     Input: 13579
     Output: 945
-    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"""
+
 def fun(num,product=1,count=0):
     if num==0:
         if count==0:
