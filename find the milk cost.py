@@ -1,5 +1,5 @@
-Write a program to find the volume of the cylinder. Also find the cost when ,when the cost of 1litre milk is 40Rs.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Write a program to find the volume of the cylinder. Also find the cost when ,when the cost of 1litre milk is 40Rs.
+
 def cost_of_milk(radius,height,cost_of_1liter):
     volume=float(3.14*radius*height)
     volume_per_liter=volume/1000
@@ -12,8 +12,5 @@ height=float(input("enter the height of the cylinder:"))
 cost_of_1liter=40
 print ("total cost of the milk=",cost_of_milk(radius,height,cost_of_1liter))
 
-ouptput:
-enter the radiu of the cylinder: 100
-enter the height of the cylinder: 500
-total cost of the milk= 6280.0
+
     
