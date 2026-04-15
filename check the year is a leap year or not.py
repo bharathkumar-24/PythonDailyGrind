@@ -1,5 +1,5 @@
-Write a program that will tell whether the given year is a leap year or not.
----------------------------------------------------------------------------------------------------------------------------------------
+# Write a program that will tell whether the given year is a leap year or not.
+
 year=int(input("ente a year"))
 if year<400:
     if year%4==0:
